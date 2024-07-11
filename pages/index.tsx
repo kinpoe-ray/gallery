@@ -35,11 +35,11 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
         <title>Kinpoe.Ray's Gallery</title>
         <meta
           property="og:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          content="https://avatars.githubusercontent.com/u/149134281?v=4"
         />
         <meta
           name="twitter:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          content="https://avatars.githubusercontent.com/u/149134281?v=4"
         />
       </Head>
       <main className="mx-auto max-w-[1960px] p-4">
@@ -120,6 +120,15 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
            AI Projects Dashboard 
         </a>
       </footer>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2G5YZG0EML"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2G5YZG0EML');
+</script>
     </>
   );
 };
