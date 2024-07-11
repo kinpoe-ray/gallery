@@ -8,19 +8,19 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Kinpoe.Ray's Gallery."
+            content="Focus on Product & AI."
           />
           <meta property="og:site_name" content="nextjsconf-pics.vercel.app" />
           <meta
             property="og:description"
-            content="Kinpoe.Ray's Gallery."
+            content="Focus on Product & AI."
           />
           <meta property="og:title" content="Kinpoe.Ray's Gallery" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Kinpoe.Ray's Gallery" />
           <meta
             name="twitter:description"
-            content="Kinpoe.Ray's Gallery."
+            content="Focus on Product & AI."
           />
         </Head>
         <body className="bg-black antialiased">
