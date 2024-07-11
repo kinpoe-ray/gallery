@@ -10,7 +10,7 @@ class MyDocument extends Document {
             name="description"
             content="Focus on Product & AI."
           />
-          <meta property="og:site_name" content="nextjsconf-pics.vercel.app" />
+          <meta property="og:site_name" content="gallery.kinpoeray.store" />
           <meta
             property="og:description"
             content="Focus on Product & AI."
