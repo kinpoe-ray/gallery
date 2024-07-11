@@ -119,8 +119,11 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
         >
            AI Projects Dashboard 
         </a>
-      </footer>
-      <!-- Google tag (gtag.js) -->
+      </footer>    
+    </>
+  );
+};
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2G5YZG0EML"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -129,10 +132,6 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
 
   gtag('config', 'G-2G5YZG0EML');
 </script>
-    </>
-  );
-};
-
 export default Home;
 
 export async function getStaticProps() {
