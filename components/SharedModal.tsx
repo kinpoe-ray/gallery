@@ -28,7 +28,7 @@ export default function SharedModal({
   const [loaded, setLoaded] = useState(false);
 
   let filteredImages = images?.filter((img: ImageProps) =>
-    range(index - 15, index + 15).includes(img.id),
+    range(index - 15, index + 15).includes(img.id)
   );
 
   const handlers = useSwipeable({
@@ -46,6 +46,10 @@ export default function SharedModal({
   });
 
   let currentImage = images ? images[index] : currentPhoto;
+  const imageStyle = {
+    width: "100%",
+    height: "80vh",
+  };
 
   return (
     <MotionConfig
@@ -69,7 +73,7 @@ export default function SharedModal({
                 initial="enter"
                 animate="center"
                 exit="exit"
-                className="absolute"
+                className="flex justify-center items-center"
               >
                 <Image
                   src={`https://res.cloudinary.com/${
@@ -79,8 +83,10 @@ export default function SharedModal({
                   }.${currentImage.format}`}
                   width={navigation ? 1280 : 1920}
                   height={navigation ? 853 : 1280}
+                  style={imageStyle}
+                  className="rounded-lg"
                   priority
-                  alt="Next.js Conf image"
+                  alt="image"
                   onLoad={() => setLoaded(true)}
                 />
               </motion.div>
@@ -141,7 +147,7 @@ export default function SharedModal({
                   onClick={() =>
                     downloadPhoto(
                       `https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/${currentImage.public_id}.${currentImage.format}`,
-                      `${index}.jpg`,
+                      `${index}.jpg`
                     )
                   }
                   className="rounded-full bg-black/50 p-2 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white"
